@@ -1,0 +1,19 @@
+
+
+<!--  <mat-card class="item" *ngFor="let individual of individuals">-->
+<!--    <h2>{{ individual.familyName}}</h2>-->
+<!--    <p>-->
+<!--      {{ individual.familyName}}-->
+<!--    </p>-->
+<!--  </mat-card>-->
+
+  <mat-card class="item" *ngFor="let individual of individuals3" [ngStyle]="{'background-color':individual.indiv.title == 'Beiratva' ? 'green' : 'red'}">
+    <h2>{{individual.indiv.givenName}} {{ individual.indiv.familyName}}</h2>
+    <p [ngClass]="individual.indiv.title == 'Beiratva' ? 'green' : 'green'">
+      Született: {{individual.indiv.placeOfBirth}}, {{individual.indiv.birthDate}}
+    </p>
+    <button mat-button (click)="denyIndividual(individual.id)">Elutasít</button>
+    <button *ngIf="individual.indiv.title != 'Beiratva'" mat-button (click)="acceptIndividual(individual)">Beiratkozás</button>
+    <mat-divider></mat-divider>
+  </mat-card>
+

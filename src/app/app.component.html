@@ -1,0 +1,68 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+
+
+<mat-sidenav-container class="side-container">
+
+  <mat-sidenav mode="side" opened>  <mat-nav-list>
+    <a mat-list-item routerLink="/index" routerLinkActive="activebutton">Kezdőlap</a>
+    <a mat-list-item routerLink="/register" routerLinkActive="activebutton">Beiratkozás</a>
+    <a mat-list-item routerLink="/admin" routerLinkActive="activebutton">Admin felület</a>
+    <a mat-list-item routerLink="/aboutus" routerLinkActive="activebutton">Rólunk</a>
+  </mat-nav-list></mat-sidenav>
+
+  <mat-sidenav-content><mat-toolbar color="primary">
+    {{title}}
+  </mat-toolbar>
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+<!--    <mat-sidenav-content>-->
+<!--      <p><mat-checkbox formControlName="fixed">Fixed</mat-checkbox></p>-->
+<!--      <p><mat-form-field>-->
+<!--        <mat-label>Top gap</mat-label>-->
+<!--        <input matInput type="number" formControlName="top">-->
+<!--      </mat-form-field></p>-->
+<!--      <p><mat-form-field>-->
+<!--        <mat-label>Bottom gap</mat-label>-->
+<!--        <input matInput type="number" formControlName="bottom">-->
+<!--      </mat-form-field></p>-->
+<!--      <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>-->
+<!--    </mat-sidenav-content>-->
+
+<!--<div *ngIf="!shouldRun">Please open on StackBlitz to see result</div>-->
+
+
+<!-- Copyright 2021 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
